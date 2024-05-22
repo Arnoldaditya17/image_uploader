@@ -1,9 +1,6 @@
-
-
-
 import 'package:another_flushbar/flushbar.dart';
 import 'package:another_flushbar/flushbar_route.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -21,7 +18,10 @@ class Utils {
         flushbarPosition: FlushbarPosition.TOP,
         forwardAnimationCurve: Curves.bounceInOut,
         margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-        icon:const Icon(Icons.dangerous_outlined,color: Colors.redAccent,),
+        icon: const Icon(
+          Icons.dangerous_outlined,
+          color: Colors.redAccent,
+        ),
         message: message,
       )..show(context),
     );
